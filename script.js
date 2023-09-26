@@ -11,7 +11,7 @@ const apiKey = "47591c8d159b4478ba6132819231109";
 async function getDataByCity(cityName) {
   try {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=yes`
+      `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=yes`
     );
 
     if (!response.ok) {
@@ -28,7 +28,7 @@ async function getDataByCity(cityName) {
 async function getDataByLocation(lat, long) {
   try {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${long}&aqi=yes`
+      `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${long}&aqi=yes`
     );
 
     if (!response.ok) {
