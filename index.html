@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get the Weather ☀️</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>WEATHER APP</h1>
+      <div>
+        <label for="city-input"
+          >Please enter a city name (e.g., New York) 🏙️</label
+        >
+        <input
+          id="city-input"
+          type="text"
+          placeholder="e.g., New York"
+          aria-label="City Input"
+        />
+        <button type="button" id="search-button">Search 🔍</button>
+        <button type="button" id="current-location-button">
+          Current Location 🌍
+        </button>
+      </div>
+    </main>
+
+    <div>
+      <header>
+        <h2 id="city-name">🌆 City, State, Country</h2>
+        <h4 id="city-time">🕒 Local Time</h4>
+        <p id="city-temperature">🌡️ Temperature</p>
+      </header>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
